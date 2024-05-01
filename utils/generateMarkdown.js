@@ -35,8 +35,7 @@ function generateMarkdown(data) {
   ## Tests
 
   ## Questions
-  [My GitHub Profile](https://github.com/${data.})
-  https://github.com/JFleming963
+  [My GitHub Profile](https://github.com/${data.gitHub})
 `;
 }
 

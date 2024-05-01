@@ -27,15 +27,17 @@ function generateMarkdown(data) {
   ## Installaion
   ${data.installation}
   ## Usage
-
+  ${data.usage}
   ## License
-
+  ${data.License}
+  
   ## Contributing
-
+  ${data.contribution}
   ## Tests
-
+  ${data.test}
   ## Questions
-  [My GitHub Profile](https://github.com/${data.gitHub})
+  If you have any questions, feel free to contact me at [${data.email}](mailto:${data.email}?subject=Generate&nbspMarkdown&nbspApp)
+  Click [here](https://github.com/${data.gitHub}) to access my GitHub repository.
 `;
 }
 

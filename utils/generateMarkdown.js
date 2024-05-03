@@ -65,6 +65,7 @@ let getLicense = function (license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Description
+  ${getLicense(data.license)}
   ${data.description}
   ## Table of Contents
 
@@ -80,13 +81,14 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
   ## License
-  ${getLicense(data.license)}
+  This software uses the ${data.license}.
   ## Contributing
   ${data.contribution}
   ## Tests
   ${data.test}
   ## Questions
-  [My GitHub Profile](https://github.com/${data.gitHub})
+  If you have any questions, comments, or bug reports feel free to reach out at [${data.email}](mailto:${data.email}).
+  To see more projects or to contribute, please visit [My GitHub Profile](https://github.com/${data.gitHub}).
 `;
 }
 

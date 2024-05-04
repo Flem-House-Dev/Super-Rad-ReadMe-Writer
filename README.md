@@ -19,7 +19,7 @@
   After the user answers the questions, a markdown file named `README.md` will be saved into the subfolder `saved_files`.
   ---
   A video walk-through can be found at this link:</br>
-  [Video Walk-through](https://drive.google.com/file/d/1gIQJvv0Ezg6L_AWp6EThTpgv6VBUv-Nb/view?usp=sharing)
+  [Video Walk-through](https://drive.google.com/file/d/1d90e2LWyaHxKBE7qns6RAM31CTB8-8Au/view?usp=sharing)
 
   ## License
   This software uses the MIT License.

@@ -1,12 +1,8 @@
-
-
+// -------- Switch statement to get license from prompt and return result to markdown generator --------
 
 let getLicense = function (license) {
-
   let licenseMd;
-
   switch (license) {
-
     case 'MIT License':
       licenseMd = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
       break;
@@ -40,32 +36,15 @@ let getLicense = function (license) {
     default:
       licenseMd = '';
   }
-
   return licenseMd;
-
 }
 
-  // TODO: Create a function that returns a license badge based on which license is passed in
-  // If there is no license, return an empty string
-  function renderLicenseBadge(licenseBadge) {
+// -------- Generate markdown README.md file --------
 
-  }
-
-  // TODO: Create a function that returns the license link
-  // If there is no license, return an empty string
-  function renderLicenseLink(license) { }
-
-  // TODO: Create a function that returns the license section of README
-  // If there is no license, return an empty string
-  function renderLicenseSection(license) { }
-
-
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ## Description
   ${getLicense(data.license)}
+  ## Description
   ${data.description}
   ## Table of Contents
 
@@ -80,19 +59,18 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
-  ${data.usage}
   ## License
   This software uses the ${data.license}.
   ## Contributing
   ${data.contribution}
-  ${data.contribution}
   ## Tests
   ${data.test}
-  ${data.test}
   ## Questions
-  If you have any questions, comments, or bug reports feel free to reach out at [${data.email}](mailto:${data.email}).
+  If you have any questions, comments, or bug reports feel free to reach out at [${data.email}](mailto:${data.email}).</br>
   To see more projects or to contribute, please visit [My GitHub Profile](https://github.com/${data.gitHub}).
 `;
 }
+
+// -------- export generateMarkdown to index.js file --------
 
 module.exports = generateMarkdown;

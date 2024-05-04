@@ -1,8 +1,10 @@
-// TODO: Include packages needed for this application
+// -------- Global Vars --------
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
-// TODO: Create an array of questions for user input
+
+// -------- Prompt Questions --------
+
 const questions = [
     {
     type: 'input',
@@ -120,24 +122,17 @@ const questions = [
 },
 ];
 
-// TODO: Create a function to write README file
-
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();
+// -------- Inquirer --------
 
 inquirer
   .prompt(questions)
   .then((answers) => {
-    // Use user feedback for... whatever!!
-    console.log(answers);
-    fs.writeFile('./README.md', generateMarkdown(answers), err => {
+    fs.writeFile('./saved_files/README.md', generateMarkdown(answers), err => {
         if (err) {
+            console.log('-----------------------');
             console.log(err);
         } else {
+            console.log('-----------------------');
             console.log('File has been successfully written');
         }
     });
@@ -145,8 +140,8 @@ inquirer
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+      console.log("Prompt couldn't be rendered in the current environment");
     } else {
-      // Something else went wrong
+      console.log("Something else went wrong");
     }
   });

@@ -1,6 +1,6 @@
-# name
+# Super Project
   ## Description
-  stuff
+  It does things
   ## Table of Contents
 
   1. [Installation](#Installation)
@@ -11,14 +11,14 @@
   6. [Questions](#Questions)
 
   ## Installaion
-  things
+  Install it
   ## Usage
-
+  Use it to do things
   ## License
-
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
   ## Contributing
-
+  Contribute to it
   ## Tests
-
+  Do some testing
   ## Questions
-  [My GitHub Profile](https://github.com/person)
+  [My GitHub Profile](https://github.com/JFleming963)

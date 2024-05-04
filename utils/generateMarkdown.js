@@ -80,11 +80,14 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
+  ${data.usage}
   ## License
   This software uses the ${data.license}.
   ## Contributing
   ${data.contribution}
+  ${data.contribution}
   ## Tests
+  ${data.test}
   ${data.test}
   ## Questions
   If you have any questions, comments, or bug reports feel free to reach out at [${data.email}](mailto:${data.email}).

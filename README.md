@@ -15,9 +15,16 @@
   The repository for this app can be found [here](https://github.com/JFleming963/Super-Rad-ReadMe-Writer). </br>
   Then, from within the project directory the user must run `npm install` to download the necessary node modules.
   ## Usage
-  To start the app, run `npm start`. Then, the a series of questions will be prompted in the console.</br>
+  To start the app, run `npm start`.
+   
+  Then, the a series of questions will be prompted in the console.
+  
   After the user answers the questions, a markdown file named `README.md` will be saved into the subfolder `saved_files`.
-  ---
+  
+  ![screenshot1](./assets/images/screenshot1.PNG)
+  ![screenshot2](./assets/images/screenshot2.PNG)
+  ![screenshot3](./assets/images/screenshot3.PNG)
+  ***
   A video walk-through can be found at this link:</br>
   [Video Walk-through](https://drive.google.com/file/d/1d90e2LWyaHxKBE7qns6RAM31CTB8-8Au/view?usp=sharing)
 
